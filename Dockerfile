@@ -54,7 +54,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
-COPY .
+COPY . .
 
 # Expose port if your application needs to listen for incoming connections
 # (Not strictly necessary for a worker bot, but good practice for web apps)
